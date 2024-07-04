@@ -1,0 +1,88 @@
+h1 {
+    font-size: 2rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #d4e3ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  div {
+    background-color: white;
+    width: 230px;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative; 
+  }
+  
+  div .Shoe {
+    width: 230px;
+    height: 160px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  div .Shoe:hover {
+    transform: scale(1.2);
+  }
+  
+  div .Bag {
+    width: 20px;
+    height: 20px;
+    position: absolute;  
+    bottom: 16px;        
+    right: 25px;        
+    cursor: pointer;
+  }
+  
+  .Desc {
+    font-size: large;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  
+  .Price {
+    color: rgb(42, 140, 246);
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  
+  ul {
+    align-self: flex-start;
+    padding-left: 10px;
+    margin-top: 10px;
+    list-style-type: none; 
+  }
+  
+  @media (max-width: 768px) {
+    div {
+      padding: 13px;
+      font-size: 16px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    div {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
